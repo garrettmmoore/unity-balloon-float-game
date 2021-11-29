@@ -35,24 +35,24 @@ public class PlayerControllerX : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnCollisionEnter(Collision collision)
     {
         // if player collides with bomb, explode and set gameOver to true
-        if (other.gameObject.CompareTag("Bomb"))
+        if (collision.gameObject.CompareTag("Bomb"))
         {
             explosionParticle.Play();
             _playerAudio.PlayOneShot(explodeSound, 1.0f);
             gameOver = true;
             Debug.Log("Game Over!");
-            Destroy(other.gameObject);
+            Destroy(collision.gameObject);
         } 
 
         // if player collides with money, fireworks
-        else if (other.gameObject.CompareTag("Money"))
+        else if (collision.gameObject.CompareTag("Money"))
         {
             fireworksParticle.Play();
             _playerAudio.PlayOneShot(moneySound, 1.0f);
-            Destroy(other.gameObject);
+            Destroy(collision.gameObject);
 
         }
 
