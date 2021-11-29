@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SpawnManagerX : MonoBehaviour
 {
@@ -13,8 +11,8 @@ public class SpawnManagerX : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        InvokeRepeating(nameof(SpawnObjects), SpawnDelay, SpawnInterval);
         _playerControllerScript = GameObject.Find("Player").GetComponent<PlayerControllerX>();
+        InvokeRepeating(nameof(SpawnObjects), SpawnDelay, SpawnInterval);
     }
 
     // Spawn obstacles

@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 785340223821834805}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,6 +119,7 @@ MonoBehaviour:
   gameOver: 0
   floatForce: 2
   gravityModifier: 1.5
+  topBound: 14
   explosionParticle: {fileID: 1256357759036533282}
   fireworksParticle: {fileID: 0}
   moneySound: {fileID: 8300000, guid: af9f934eb4288464eb120a5857921cc3, type: 3}
