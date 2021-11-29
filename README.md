@@ -1,7 +1,7 @@
 #Unity Balloon Float Game
 
 ## Player
-- [ ] The balloon floats upwards as the player holds the spacebar
+- [x] The balloon floats upwards as the player holds the spacebar
 
 ## Gameplay Mechanics
 - [ ] When a player collides with a Money token, trigger a particle and play a sound effect
